@@ -1,9 +1,21 @@
+
 class personagem{
+    #vida
+
     constructor(vida ,força, mana, ){
         this.força = força;
-        this.vida = vida;
+        this.#vida = vida;
         this.mana = mana;
+    
     } 
+
+    // get e set 
+    getvida(novavida){
+        this.#vida = novavida;
+    }
+    setvida(novavida){
+        this.#vida = novavida
+    }
     ataqueBase(){
         console.log('ataque base')
     }
