@@ -6,9 +6,9 @@ class personagem{
     }
 }
 class personagem extends mago  {
-    constructor(força,vida,mana,magia){
+    constructor(força,vida,mana){
         super(força,vida,mana);
-        this.magia = magia;
+        
     }
     BolaDeFogo(){
         console.log('magia profana....Salamaleko')
@@ -16,9 +16,8 @@ class personagem extends mago  {
 }
 
 class personagem extends guerreiro  {
-    constructor(força,vida,mana,defesa){
+    constructor(força,vida,mana,){
         super(força,vida,mana);
-        this.defesa = defesa;
     }
     defesa(){
         console.log('escudo protetor')
@@ -26,9 +25,8 @@ class personagem extends guerreiro  {
 }
 
 class personagem extends arqueiro  {
-    constructor(força,vida,mana,flechas){
+    constructor(força,vida,mana){
         super(força,vida,mana); 
-        this.flecha = this.flecha
     }
     atirar(){
         console.log('Flechada Sagrada')
